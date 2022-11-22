@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/signupstyles.css">
+    <link rel="stylesheet" media="(min-width:1280px)" href="/css/signupstyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li id="back"><a href="login1.html">Return</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Please sign-up before continuing</h1><br><br>
+            <div class="select">
+                <h1>Select your gender:</h1>
+            </div>
+            <div class="gender">
+                <a href="#"><img src="/signup.images/male.jpg" alt="Male" id="male" title="Male"></a>&nbsp&nbsp&nbsp&nbsp
+                <a href="#"><img src="/signup.images/female.jpg" alt="female" id="female" title="Female"></a>&nbsp&nbsp&nbsp&nbsp
+                <a href="#"><img src="/signup.images/herm.jpg" alt="Other" id="other" title="Other"></a>&nbsp&nbsp&nbsp&nbsp
+            </div>
+            <div class="sign-up-form">
+                <form method="POST" autocomplete="on" action="https://jkorpela.fi/cgi-bin/echo.cgi" target="cgi-results">
+                    <fieldset>
+                        <legend>Name Information</legend>
+                        <label for="FirstName">First Name:</label><br><br>
+                        <input type="text" id="FirstName" placeholder="Please type your first name"
+                            title="Please type your first name" name="FirstName" style="width: 200px;"><br><br>
+                        <label for="LastName">Last Name:</label><br><br>
+                        <input type="text" id="LastName" name="LastName" placeholder="Please type your last name"
+                            title="Your lastname" style="width: 200px;">
+                    </fieldset><br><br>
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <label for="email">Email:</label><br><br>
+                        <input id="email" type="email" name="email" placeholder="Please type your email address"
+                            title="Your email address" style="width: 200px;"><br><br>
+                        <label for="telephone">Phone num:</label><br><br>
+                        <input type="tel" id="telephone" name="telephone" placeholder="Please type your telephone number"
+                            value="(670)" title="Your telephone number" style="width: 200px;">
+                    </fieldset><br><br>
+                    <fieldset>
+                        <legend>Birthday</legend>
+                        <label for="dob">Date of Birth:</label><br><br>
+                        <input type="date" id="dob" name="dob" placeholder="Please type your first name" title="Your birthdate" style="width: 100px;"><br><br>
+                        <label for="today">Today's Date:</label><br><br>
+                        <input type="date" id="today" title="Today's Date" value="11/3/2022">
+                    </fieldset><br><br>
+                    <button id="button"><a href="thanks3.html"><span>Submit</span></a></button>
+                </form><br><br>
+            </div>
+            <button><a href="thanks3.html">REMOVE LATER</a></button>
+        </section>
+    </main>
+    <footer id="footer">
+        <p>@ 2022 Milbert Barcelo</p>
+    </footer>
+
+    <script>
+        let form = document.getElementsByName("form");
+
+        function openForm() {
+            form.classList.add("open-form");
+        }
+    </script>
+</body>
+
+</html>

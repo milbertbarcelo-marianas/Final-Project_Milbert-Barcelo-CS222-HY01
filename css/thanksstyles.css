@@ -88,6 +88,7 @@ figure img {
     width: 50%;
     height: 100%;
     float: left;
+    border-radius: 20px;
 }
 
 figure p {

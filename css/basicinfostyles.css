@@ -25,7 +25,7 @@ nav li#back a {
     text-align: left;
 }
 
-nav.menu ul {   
+nav.menu ul {
     list-style: none;
 }
 
@@ -56,65 +56,47 @@ section {
     max-width: 960px;
 }
 
-
-section > div > h1 {
-    font-weight: bolder;
-    font-size: 25px;
-    margin-top: 0;
-    text-align: center;
-}
-
-div.blog {
-    display: grid;
-    border: 5px solid black;
+div.container1 {
     padding: 20px;
-    border-radius: 20px;
+    border: 5px solid black;
+}
+
+.container1 h3 {
     text-align: left;
 }
 
-#bloghead {
-    text-decoration: underline;
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-div.container1 h2{
-    display: grid;
-    text-decoration: underline;
-    text-align: left;
+figure {
+    display: table;
 }
 
 figure img {
-    width: 50%;
-    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    height: 400px;
+    width: 500px;
+    border-radius: 20px;
+    border: 5px outset peachpuff;
 }
+
 figcaption {
     float: left;
+    background-color: black;
+    border-radius: 5px 60px 90px 20px;
+    color: peachpuff;
+    width: 100%;
 }
 
-figure p {
-    text-align: center;
-    margin-left: 20px;
-    padding: 20px;
-}
-
-ul li {
-    display: grid;
-    grid-template-rows: 100px;
-    justify-content: end;
-    padding-top: 20px;
-    padding-left: 30px;
+#ul1 {
+    text-align: start;
+    padding-left: 100px;
     list-style-type: none;
+    vertical-align: middle;
+    display: table-cell;
 }
 
-ul li a {
-    display: grid;
-    justify-content: end;
-    font-size: 40px;
-    text-decoration: underline;
-    color: black;
+li {
+    display: inline-block;
 }
-
 
 #footer {
     color: white;

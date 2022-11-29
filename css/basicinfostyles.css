@@ -75,13 +75,13 @@ figure img {
     height: 400px;
     width: 500px;
     border-radius: 20px;
-    border: 5px outset peachpuff;
+    box-shadow: 5px 10px 20px 20px;
 }
 
 figcaption {
     float: left;
     background-color: black;
-    border-radius: 5px 60px 90px 20px;
+    border-radius: 20px;
     color: peachpuff;
     width: 100%;
 }
@@ -97,6 +97,18 @@ figcaption {
 li {
     display: inline-block;
 }
+
+#ul2 {
+    text-align: start;
+    padding-left: 100px;
+    padding-right: 150px;
+    list-style-type: none;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+
+
 
 #footer {
     color: white;

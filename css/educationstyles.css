@@ -92,6 +92,7 @@ td, th {
     padding: 5px;
     border: 1px solid black;
     word-wrap: break-word;
+    color: #FAF9F6;
 }
 
 table tr td {

@@ -86,7 +86,7 @@ figure {
 figure img {
     display: table-cell;
     vertical-align: middle;
-    height: 400px;
+    height: 500px;
     width: 500px;
     border-radius: 20px;
     box-shadow: 5px 10px 20px 20px;

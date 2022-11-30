@@ -95,6 +95,10 @@ td, th {
     word-wrap: break-word;
 }
 
+table tr td {
+    padding: 16px;
+}
+
 .bottomlinks {
     font-size: 30px;
     display: flex;

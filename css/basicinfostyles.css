@@ -15,12 +15,14 @@ input,select{vertical-align:middle}
 
 body {
     margin: 0;
-    width: auto;
+    width: 100%;
     min-height: 100vh;
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
     background-color: #494d5f;
-    display: grid;
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 header {

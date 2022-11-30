@@ -121,7 +121,11 @@ li {
     display: table-cell;
 }
 
-
+.bottomlinks {
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+}
 
 
 #footer {

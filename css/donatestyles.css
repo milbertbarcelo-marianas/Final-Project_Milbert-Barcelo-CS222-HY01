@@ -49,7 +49,7 @@ nav.menu a {
     text-decoration: none;
     width: 100px;
     display: block;
-    padding: 15px;
+    padding: 10px;
     font-size: 17px;
 }
 
@@ -58,6 +58,7 @@ nav.menu a:hover {
 }
 
 section {
+    height: 700px;
     display: grid;
     background-color: peachpuff;
     padding: 60px 60px 60px 60px;
@@ -67,38 +68,56 @@ section {
     max-width: 960px;
 }
 
-section h1 {
-    font-size: 50px;
+
+section > div > h1 {
+    font-weight: bolder;
+    font-size: 25px;
+    margin-top: 0;
+    text-align: center;
 }
 
-section table {
+div.blog {
+    display: grid;
     border: 5px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: left;
 }
 
-table {
-    border-radius: 30px;
-    width: 100%;
+#bloghead {
+    text-decoration: underline;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
-table caption {
-    caption-side: bottom;
+div.container1 h2{
+    display: grid;
+    text-decoration: underline;
+    text-align: left;
 }
 
-thead {
-    background-color: #009879;
-    color: #ffffff;
+figure img {
+    width: 50%;
+    height: 100%;
+    float: left;
+    border-radius: 20px;
 }
 
-td, th {
-    padding: 5px;
-    border: 1px solid black;
-    word-wrap: break-word;
+
+ul li {
+    display: grid;
+    grid-template-rows: 100px;
+    justify-content: end;
+    padding: 15px;
+    list-style-type: none;
 }
 
-.bottomlinks {
-    font-size: 30px;
-    display: flex;
-    justify-content: space-between;
+ul li a {
+    display: grid;
+    justify-content: end;
+    font-size: 40px;
+    text-decoration: underline;
+    color: black;
 }
 
 

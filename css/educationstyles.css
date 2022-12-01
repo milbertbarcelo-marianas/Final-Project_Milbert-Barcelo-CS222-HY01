@@ -105,6 +105,89 @@ table tr td {
     justify-content: space-between;
 }
 
+#bottomlinks {
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    text-align: right;
+    font-size: 40px;
+    padding: 5px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#bottomlinks span {
+    color: #303030;
+}
+
+#bottomlinks span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#bottomlinks span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#bottomlinks:hover span {
+    padding-right: 25px;
+    background-color: #FAF9F6;
+}
+
+#bottomlinks:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#bottomlinks2 {
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    text-align: right;
+    font-size: 40px;
+    padding: 5px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#bottomlinks2 span {
+    color: #303030;
+}
+
+#bottomlinks2 span {
+    cursor: pointer;
+    display: inline;
+    position: absolute;
+    transition: 0.5s;
+}
+
+#bottomlinks2 span:after {
+    content: '\00ab';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    padding-right: 246px;
+    transition: 0.5s;
+}
+
+#bottomlinks2:hover span {
+	padding-left: 25px;
+    background-color: #FAF9F6;
+}
+
+#bottomlinks2:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
 
 #footer {
     color: white;

@@ -65,6 +65,9 @@ section {
     text-align: center;
     max-width: 960px;
 }
+section h1 {
+    font-size: 30px;
+}
 
 div.container1 {
     padding: 20px;
@@ -73,6 +76,7 @@ div.container1 {
 
 .container1 h3 {
     text-align: left;
+    font-size: 30px;
 }
 
 figure {
@@ -117,7 +121,46 @@ li {
     display: table-cell;
 }
 
+#bottomlinks {
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    text-align: right;
+    font-size: 40px;
+    padding: 5px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
 
+#bottomlinks span {
+    color: #303030;
+}
+
+#bottomlinks span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#bottomlinks span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#bottomlinks:hover span {
+    padding-right: 25px;
+    background-color: #FAF9F6;
+}
+
+#bottomlinks:hover span:after {
+    opacity: 1;
+    right: 0;
+}
 
 #footer {
     color: white;
@@ -127,3 +170,6 @@ li {
     background-color: #003153;
     text-align: center;
 }
+@media (min-width: 640px) { body {font-size:1rem;} } 
+@media (min-width:960px) { body {font-size:1.2rem;} } 
+@media (min-width:1100px) { body {font-size:1.5rem;} } 

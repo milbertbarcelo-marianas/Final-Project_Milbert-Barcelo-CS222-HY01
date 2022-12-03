@@ -73,14 +73,14 @@ form .txt-field {
     transition: .5s;
 }
 
-.txt-field input:focus ~ label,
-.txt-field input:valid ~ label {
+.txt-field input:focus~label,
+.txt-field input:valid~label {
     top: -5px;
     color: #2691d9;
 }
 
-.txt-field input:focus ~ span::before,
-.txt-field input:valid ~ span::before {
+.txt-field input:focus~span::before,
+.txt-field input:valid~span::before {
     width: 100%;
 }
 
@@ -128,6 +128,26 @@ input[type="submit"]:hover {
     text-decoration: underline;
 }
 
-@media (min-width: 640px) { body {font-size:1rem;} } 
-@media (min-width:960px) { body {font-size:1.0rem;} } 
-@media (min-width:1100px) { body {font-size:1.1rem;} } 
+@media (min-width: 640px) {
+    body {
+        font-size: 1rem;
+        width: auto;
+        height: auto;
+    }
+}
+
+@media (min-width:960px) {
+    body {
+        font-size: 1.0rem;
+        width: auto;
+        height: auto;
+    }
+}
+
+@media (min-width:1100px) {
+    body {
+        font-size: 1.1rem;
+        width: auto;
+        height: auto;
+    }
+}

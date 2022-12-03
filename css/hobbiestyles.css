@@ -225,6 +225,115 @@ video {
     text-align: center;
 }
 
-@media (min-width: 640px) { body {font-size:1rem;} } 
-@media (min-width:960px) { body {font-size:1.2rem;} } 
-@media (min-width:1100px) { body {font-size:1.5rem;} } 
+@media screen and (max-width: 650px) {
+    main {
+        width: 100%;
+    }
+    .container1 {
+        width: 85%;
+    }
+    #ul1 {
+        padding-top: 50px;
+        padding-right: 50px;
+        float: left;
+    }
+    #ul2 {
+        padding-top: 50px;
+        float: left;
+    }
+    figcaption {
+        width: 100%;
+    }
+    figure img {
+        max-width: 350px;
+        max-height: 300px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    main {
+        width: 100%;
+    }
+    .container1 {
+        max-width: 10px;
+    }
+    #ul1 {
+        padding-top: 50px;
+        padding-right: 50px;
+        float: left;
+    }
+    #ul2 {
+        padding-top: 50px;
+        float: left;
+    }
+    figure img {
+        width: 400px;
+        height: 350px;
+    }
+    figcaption {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        width: 100%;
+    }
+    .container1 {
+        max-width: 75%;
+    }
+    #ul1 {
+        padding-top: 50px;
+        padding-right: 50px;
+        float: left;
+    }
+    #ul2 {
+        padding-top: 50px;
+        float: left;
+    }
+    figure img {
+        width: 450px;
+        height: 400px;
+    }
+    figcaption {
+        max-width: 400px;
+    }
+    video {
+        padding-right: 300px;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    main {
+        width: 100%;
+    }
+    .container1 {
+        width: 80%;
+    }
+    #ul1 {
+        padding-top: 50px;
+        padding-right: 300px;
+        float: left;
+    }
+    #ul2 {
+        padding-top: 50px;
+        padding-right: 300px;
+        float: left;
+    }
+    img {
+        max-width: 400px;
+        max-height: 350px;
+    }
+    figcaption {
+        width: 400px;
+    }
+
+    video {
+        padding-right: 450px;
+    }
+
+    .bottomlinks {
+        width: 800px;
+        font-size: small;
+    }
+}

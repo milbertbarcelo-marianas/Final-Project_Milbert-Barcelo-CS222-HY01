@@ -86,8 +86,8 @@ figure {
 figure img {
     display: table-cell;
     vertical-align: middle;
-    height: 500px;
-    width: 500px;
+    max-height: 500px;
+    max-width: 500px;
     border-radius: 20px;
     box-shadow: 5px 10px 20px 20px;
 }
@@ -100,9 +100,10 @@ figcaption {
     width: 100%;
 }
 
+
 #ul1 {
     text-align: start;
-    padding-left: 100px;
+    padding-left: 80px;
     list-style-type: none;
     vertical-align: middle;
     display: table-cell;
@@ -114,15 +115,14 @@ li {
 
 #ul2 {
     text-align: start;
-    padding-left: 100px;
-    padding-right: 150px;
+    padding-left: 10px;
     list-style-type: none;
     vertical-align: middle;
     display: table-cell;
 }
 
 video {
-    width: 400px;
+    max-width: 400px;
     border-radius: 20px;
 }
 
@@ -225,115 +225,63 @@ video {
     text-align: center;
 }
 
-@media screen and (max-width: 650px) {
-    main {
-        width: 100%;
-    }
-    .container1 {
-        width: 85%;
-    }
-    #ul1 {
-        padding-top: 50px;
-        padding-right: 50px;
-        float: left;
-    }
-    #ul2 {
-        padding-top: 50px;
-        float: left;
+@media screen and (max-width: 725px) {
+    img {
+        width: 300px;
     }
     figcaption {
-        width: 100%;
+        max-width: 300px;
     }
-    figure img {
-        max-width: 350px;
-        max-height: 300px;
-    }
-}
 
-@media screen and (max-width: 700px) {
-    main {
-        width: 100%;
-    }
-    .container1 {
-        max-width: 10px;
-    }
-    #ul1 {
-        padding-top: 50px;
-        padding-right: 50px;
-        float: left;
-    }
-    #ul2 {
-        padding-top: 50px;
-        float: left;
-    }
-    figure img {
-        width: 400px;
-        height: 350px;
-    }
-    figcaption {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    main {
-        width: 100%;
-    }
-    .container1 {
-        max-width: 75%;
-    }
-    #ul1 {
-        padding-top: 50px;
-        padding-right: 50px;
-        float: left;
-    }
-    #ul2 {
-        padding-top: 50px;
-        float: left;
-    }
-    figure img {
-        width: 450px;
-        height: 400px;
-    }
-    figcaption {
-        max-width: 400px;
-    }
     video {
-        padding-right: 300px;
     }
 }
 
-@media screen and (max-width: 1020px) {
-    main {
-        width: 100%;
-    }
-    .container1 {
+@media screen and (max-width: 887px) {
+    figcaption {
         width: 80%;
     }
+
     #ul1 {
-        padding-top: 50px;
-        padding-right: 300px;
         float: left;
     }
     #ul2 {
         padding-top: 50px;
-        padding-right: 300px;
         float: left;
     }
+    span {
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width: 1052px) {
+    main {
+        width: 100%;
+    }
+    .container1 {
+        width: 90%;
+    }
+
+    #ul1 {
+        padding-top: 50px;
+    }
+
     img {
         max-width: 400px;
         max-height: 350px;
     }
-    figcaption {
-        width: 400px;
-    }
 
     video {
-        padding-right: 450px;
+        justify-content: start;
     }
 
-    .bottomlinks {
-        width: 800px;
-        font-size: small;
+    #fig2 {
+        width: 88%;
+    }
+
+    span {
+        font-size: 20px;
+        padding-right: 50px;
     }
 }

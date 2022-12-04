@@ -49,7 +49,7 @@ nav.menu a {
     text-decoration: none;
     width: 100px;
     display: block;
-    padding: 10px;
+    padding: 15px;
     font-size: 17px;
 }
 
@@ -58,7 +58,6 @@ nav.menu a:hover {
 }
 
 section {
-    height: 700px;
     display: grid;
     background-color: peachpuff;
     padding: 60px 60px 60px 60px;
@@ -66,8 +65,90 @@ section {
     margin-left: auto;
     text-align: center;
     max-width: 960px;
+    min-height: 800px;
 }
 
+ form {
+    width: 500px;
+    height: 500px;
+ }
+.rate {
+    border: 1px solid #888;
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    width: 500px;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.rater {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+    margin-left: 170px;
+}
+.rater:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rater:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color: #1f1f1f;;
+}
+.rater:not(:checked) > label:before {
+    content: '★ ';
+}
+.rater > input:checked ~ label {
+    color: #ffc700;    
+}
+.rater:not(:checked) > label:hover,
+.rater:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rater > input:checked + label:hover,
+.rater > input:checked + label:hover ~ label,
+.rater > input:checked ~ label:hover,
+.rater > input:checked ~ label:hover ~ label,
+.rater > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+.recommend {
+    float: left;
+    margin-left: 70px;
+}
+
+button {
+    width: 90px;
+    height: 50px;
+    float: left;
+    margin-left: 210px;
+}
+
+button:hover {
+    background-color: red;
+}
+
+.raise {
+    border: 5px solid #003153;
+    padding: 20px;
+}
+
+#donate {
+    font-size: 30px;
+    text-decoration: none;
+}
+#donate:hover {
+    color: violet;
+    text-decoration: underline;
+}
 .bottomlinks {
     font-size: 30px;
     display: flex;
@@ -101,7 +182,7 @@ section {
     opacity: 0;
     top: 0;
     right: -20px;
-    padding-right: 246px;
+    padding-right: 290px;
     transition: 0.5s;
 }
 
@@ -115,6 +196,7 @@ section {
     right: 0;
 }
 
+
 #footer {
     color: white;
     position: sticky;
@@ -122,4 +204,28 @@ section {
     border: 5px solid #003153;
     background-color: #003153;
     text-align: center;
+}
+
+@media screen and (max-width: 639px) {
+    form {
+        width: 90px;
+    }
+    .rate {
+        max-width: 500px;
+    }
+    .raise {
+        width: 350px;
+    }
+    span {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .rate {
+        min-width: 100px;
+    }
+    form {
+        width: 500px;
+    }
 }

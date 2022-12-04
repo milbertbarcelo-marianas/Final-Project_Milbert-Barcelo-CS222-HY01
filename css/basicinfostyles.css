@@ -1,17 +1,164 @@
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
-body{line-height:1}
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
-nav ul{list-style:none}
-blockquote,q{quotes:none}
-blockquote:before,blockquote:after,q:before,q:after{content:none}
-a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
-ins{background-color:#ff9;color:#000;text-decoration:none}
-mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
-del{text-decoration:line-through}
-abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
-table{border-collapse:collapse;border-spacing:0}
-hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
-input,select{vertical-align:middle}
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent
+}
+
+body {
+    line-height: 1
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+nav ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: none
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent
+}
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none
+}
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold
+}
+
+del {
+    text-decoration: line-through
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0
+}
+
+input,
+select {
+    vertical-align: middle
+}
 
 body {
     margin: 0;
@@ -65,6 +212,7 @@ section {
     text-align: center;
     max-width: 960px;
 }
+
 section h1 {
     font-size: 30px;
 }
@@ -97,7 +245,8 @@ figcaption {
     background-color: black;
     border-radius: 20px;
     color: peachpuff;
-    width: 100%;
+    width: 50%;
+    text-align: end;
 }
 
 #ul1 {
@@ -114,6 +263,7 @@ li {
 
 #ul2 {
     text-align: start;
+    padding-top: 50px;
     padding-left: 100px;
     padding-right: 150px;
     list-style-type: none;
@@ -171,75 +321,95 @@ li {
     text-align: center;
 }
 
-
-@media screen and (max-width: 650px) {
-    main {
-        width: 100%;
-    }
-    .container1 {
-        width: 85%;
-    }
-    #ul1 {
-        padding-top: 50px;
-        padding-right: 50px;
-        float: left;
-    }
-    #ul2 {
-        padding-top: 50px;
-        float: left;
-    }
-    figcaption {
-        width: 50%;
-    }
+@media screen and (max-width: 588px) {
     figure img {
-        max-width: 350px;
-        max-height: 300px;
+        width: 90%;
+        min-height: 20%;
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 675px) {
+    figure img {
+        width: 90%;
+        height: 90%;
+    }
+
+    img {
+        min-width: 90%;
+        min-height: 90%;
+    }
+
+}
+
+@media screen and (max-width: 830px) {
+    #ul1 {
+        float: left;
+    }
+
+}
+
+@media screen and (max-width: 865px) {
+    .container1 {
+        min-width: 95%;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .container1 {
+        min-width: 95%;
+    }
+
+    #ul1 {
+        float: left;
+    }
+
+    #ul2 {
+        float: left;
+    }
+}
+
+
+
+@media screen and (max-width: 931px) {
+    .container1 {
+        min-width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 956px) {
+    .container1 {
+        max-width: 85%;
+    }
+}
+
+@media screen and (max-width: 986px) {
     main {
         width: 100%;
     }
     .container1 {
-        width: 85%;
+        width: 90%;
     }
+
     #ul1 {
         padding-top: 50px;
-        padding-right: 50px;
-        float: left;
+        padding-right: 100px;
     }
+
     #ul2 {
         padding-top: 50px;
-        float: left;
     }
+
     figcaption {
-        width: 100%;
+        width: 50%;
     }
+
     img {
         max-width: 400px;
-        height: 350px;
+        min-height: 450px;
+    }
+
+    span {
+        font-size: 30px;
     }
 }
-
-@media screen and (max-width: 900px) {
-    main {
-        width: 100%;
-    }
-    .container1 {
-        width: 85%;
-    }
-    #ul1 {
-        padding-top: 50px;
-        padding-right: 50px;
-        float: left;
-    }
-    #ul2 {
-        padding-top: 50px;
-        float: left;
-    }
-    figcaption {
-        width: 50%;
-    }
-}
-
